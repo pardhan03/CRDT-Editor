@@ -34,7 +34,7 @@ function App() {
 
   useEffect(() => {
     if (username) {
-      const provider = new SocketIOProvider("/", "monaco", ydoc, {
+      const provider = new SocketIOProvider("/", "monaco", ydoc, { // here / because our fronend and backend are running on the same port
         autoConnect: true,
       })
 
